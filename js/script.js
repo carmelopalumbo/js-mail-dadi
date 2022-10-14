@@ -30,7 +30,7 @@ inputBtn.addEventListener('click', function(){
 const minDado = 1;
 const maxDado = 6
 const numBtn = document.getElementById('actiondadi');
-const container = document.querySelector('.finaldadi');
+const container = document.querySelector('.results');
 let outputUser;
 let outputCpu;
 let outputResult;
@@ -38,6 +38,7 @@ let numUser = 0;
 let numCpu = 0;
 
 numBtn.addEventListener('click', function(){
+    container.innerHTML = '';
     numUser = Math.floor(Math.random() * (maxDado - minDado + 1) + minDado);
     numCpu = Math.floor(Math.random() * (maxDado - minDado + 1) + minDado);
     console.log(numUser);
