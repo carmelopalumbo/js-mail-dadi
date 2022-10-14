@@ -45,8 +45,8 @@ numBtn.addEventListener('click', function(){
     console.log(numCpu);
     outputUser = document.createElement('div');
     outputCpu = document.createElement('div');
-    outputUser.innerHTML = `Il tuo numero é ${numUser}`;
-    outputCpu.innerHTML = `Il numero della cpu é ${numCpu}`;
+    outputUser.innerHTML = `Il tuo numero é:  ${numUser}`;
+    outputCpu.innerHTML = `Il numero della cpu é:  ${numCpu}`;
     container.append(outputUser);
     container.append(outputCpu);
 
@@ -54,7 +54,7 @@ numBtn.addEventListener('click', function(){
     if(numUser > numCpu){
         outputResult = 'HAI VINTO!';
     }else if(numCpu > numUser ){
-        outputResult = 'Hai perso :( riprova!';
+        outputResult = 'Hai perso :( RIPROVA!';
     }else{
         outputResult = 'PAREGGIO!';
     }
