@@ -20,6 +20,7 @@ inputBtn.addEventListener('click', function(){
         mailOutput.innerHTML = 'NON hai accesso a questa lista. Inserisci una mail valida.';
     }
     isIntolist = false;
+    inputMail.value = '';
 })
 
 
